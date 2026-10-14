@@ -1,0 +1,4 @@
+echo "myenv/
+__pycache__/
+.env
+.DS_Store" > .gitignore

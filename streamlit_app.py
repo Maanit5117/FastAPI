@@ -188,9 +188,9 @@ with st.sidebar:
         help="Choose whether to request predictions through the FastAPI app.py endpoint or run directly using model.pkl."
     )
 
-    api_base_url = "http://127.0.0.1:8000"
+    api_base_url = "http://127.0.0.1:8001"
     if backend_mode == "FastAPI Server (REST API)":
-        api_base_url = st.text_input("FastAPI Base URL:", value="http://127.0.0.1:8000")
+        api_base_url = st.text_input("FastAPI Base URL:", value="http://127.0.0.1:8001")
         
         is_online = check_api_status(api_base_url)
         if is_online:
